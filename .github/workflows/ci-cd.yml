@@ -1,7 +1,7 @@
 name: CI/CD Pipeline
 
 on:
-  push:
+  workflow_dispatch:
     branches: [ main ]
     paths-ignore:
       - 'kubernetes/deployment.yaml'  # Ignore changes to this file to prevent loops
